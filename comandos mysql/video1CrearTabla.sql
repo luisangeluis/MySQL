@@ -6,4 +6,5 @@ CREATE TABLE alumnos(
     grado smallint NOT NULL,
     grupo varchar(2) NOT NULL,
     fecha_ingreso date default '0000-00-00'
+	
 );
