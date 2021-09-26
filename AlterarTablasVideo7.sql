@@ -1,6 +1,6 @@
 use escuela2;
 show tables;
-/*Mostrar las caracteristicas de la tabla*/
+/*Mostrar las caracteristicas de la tabla */
 
 show columns from alumnos;
 /*Mostrar el query de la tabla*/
