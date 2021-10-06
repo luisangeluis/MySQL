@@ -1,5 +1,5 @@
 use escuela2;
-alter table alumno drop constraint fk_idSalon;
+alter table alumno drop constraint fk_idSalon ;
 
 alter table alumno add constraint fk_idSalon foreign key (idSalon) references salon(id)
 on delete cascade on update cascade;
