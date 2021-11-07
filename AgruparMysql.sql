@@ -13,4 +13,10 @@ INSERT INTO alumnos (nombre,idSalon,edad) values('federico',3,22),('angel',1,29)
 
 select * from alumnos;
 select idSalon as salon,nombre,edad as años, fecha_ingreso as ingreso from alumnos where edad>25;
+/*Selecciona en este caso la cantidad de id's de alumnos si los agrupas por su idSalon*/
+select idSalon,count(id) as cantidadAlumnos from alumnos group by idSalon;
+select min(edad) as edadMenor,max(edad) as edadMayor from alumnos where idSalon =3;
+select * from alumnos limit 5,2;
+select * from alumnos order  by edad;
+select * from alumnos order  by edad desc;
 
